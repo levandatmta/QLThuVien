@@ -76,7 +76,7 @@ insert into ACCOUNT values ('15','Nguyễn Hữu Hoàng Hiếu', '123456', 1)
 insert into ACCOUNT values ('1','phamhaingoc1', '123456', 1)
 insert into ACCOUNT values ('2','phamhaingoc2', '123456', 1)
 insert into ACCOUNT values ('3','phamminhhoang', '123456', 1)
-insert into ACCOUNT values ('7','nguyenthanhhai', '123456', 1)
+insert into ACCOUNT values ('7','duong', '123456', 1)
 insert into ACCOUNT values ('999','admin', '', 0)
 ----
 insert into DOCGIA values ('1','phamhaingoc1',N'Phạm Ngọc Hải','Nam',1996,N'510 Lý Thái Tổ')
@@ -86,10 +86,10 @@ insert into DOCGIA values ('7','nguoithanhhai',N'Nguyễn Thanh Hải',N'Nữ',1
 insert into DOCGIA values ('15','nguyenhuuhoanghieu',N'Nguyễn Hữu Hoàng Hiếu',N'Nữ',1994,N'120 Lý Thái Tổ')
 
 ----
-insert into SACH values ('1', N'Lập trình hướng đối tượng', N'Không biết', N'Lập trình', 'HCMUS', 1500, 3, N'Còn')
-insert into SACH values ('2', N'Nhập môn lập trình', N'Không biết', N'Lập trình', 'HCMUS', 1500, 10, N'Còn')
-insert into SACH values ('3', N'Kỹ Thuật Lập Trình', N'Không biết', N'Lập trình', 'HCMUS', 3000, 5, N'Còn')
-insert into SACH values ('4', N'Thiết Kế Phần Mềm', N'Không biết', N'Lập trình', 'HCMUS', 4000, 0, N'Hết')
+insert into SACH values ('1', N'Lập trình hướng đối tượng', N'Không biết', N'Lập trình', 'MTA', 1500, 3, N'Còn')
+insert into SACH values ('2', N'Nhập môn lập trình', N'Không biết', N'Lập trình', 'MTA', 1500, 10, N'Còn')
+insert into SACH values ('3', N'Kỹ Thuật Lập Trình', N'Không biết', N'Lập trình', 'MTA', 3000, 5, N'Còn')
+insert into SACH values ('4', N'Thiết Kế Phần Mềm', N'Không biết', N'Lập trình', 'MTA1', 4000, 0, N'Hết')
 ---
 insert into PHIEUMUON values ('1','1','1','1/1/2017', '1/2/2017')
 insert into PHIEUMUON values ('2','2','1','1/2/2017', '1/3/2017')

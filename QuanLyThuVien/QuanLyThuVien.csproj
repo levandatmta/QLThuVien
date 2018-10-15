@@ -82,13 +82,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BUS\DangMuon_BUS.cs" />
+    <Compile Include="BUS\DaTra_BUS.cs" />
+    <Compile Include="BUS\LichSuMuon_BUS.cs" />
     <Compile Include="BUS\MatKhau_BUS.cs" />
+    <Compile Include="BUS\SachDangMuon_BUS.cs" />
     <Compile Include="BUS\ThanhVien_BUS.cs" />
     <Compile Include="DAO\DataProvider.cs" />
-    <Compile Include="DAO\ThanhVien_DAO.cs" />
+    <Compile Include="DAO\DaTra_DAO.cs" />
     <Compile Include="DTO\DocGia.cs" />
     <Compile Include="BUS\DocGia_BUS.cs" />
-    <Compile Include="DAO\DocGia_DAO.cs" />
     <Compile Include="DTO\ThanhVien.cs" />
     <Compile Include="GUI\fLogin.cs">
       <SubType>Form</SubType>
@@ -97,8 +100,24 @@
       <DependentUpon>fLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="DTO\PhieuMuon.cs" />
+    <Compile Include="BUS\PhieuMuon_BUS.cs" />
     <Compile Include="DTO\PhieuTra.cs" />
+    <Compile Include="BUS\PhieuTra_BUS.cs" />
+    <Compile Include="DAO\PhieuTra_DAO.cs" />
     <Compile Include="DTO\Sach.cs" />
+    <Compile Include="BUS\Sach_BUS.cs" />
+    <Compile Include="GUI\ucBondsManagment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ucBondsManagment.Designer.cs">
+      <DependentUpon>ucBondsManagment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ucBondsPaidManagement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ucBondsPaidManagement.Designer.cs">
+      <DependentUpon>ucBondsPaidManagement.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\FrmHome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,28 +126,28 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="GUI\ucBooksManagemnet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ucBooksManagemnet.Designer.cs">
+      <DependentUpon>ucBooksManagemnet.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\ucChangePassword.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="GUI\ucChangePassword.Designer.cs">
       <DependentUpon>ucChangePassword.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\ucLoanHistory.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GUI\ucLoanHistory.Designer.cs">
-      <DependentUpon>ucLoanHistory.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\ucMember.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GUI\ucMember.Designer.cs">
-      <DependentUpon>ucMember.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="GUI\fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="GUI\ucBondsManagment.resx">
+      <DependentUpon>ucBondsManagment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ucBondsPaidManagement.resx">
+      <DependentUpon>ucBondsPaidManagement.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\FrmHome.resx">
       <DependentUpon>FrmHome.cs</DependentUpon>
     </EmbeddedResource>
@@ -142,14 +161,11 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="GUI\ucBooksManagemnet.resx">
+      <DependentUpon>ucBooksManagemnet.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\ucChangePassword.resx">
       <DependentUpon>ucChangePassword.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\ucLoanHistory.resx">
-      <DependentUpon>ucLoanHistory.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\ucMember.resx">
-      <DependentUpon>ucMember.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

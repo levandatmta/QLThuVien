@@ -85,16 +85,11 @@
     <Compile Include="BUS\MatKhau_BUS.cs" />
     <Compile Include="BUS\ThanhVien_BUS.cs" />
     <Compile Include="DAO\DataProvider.cs" />
-    <Compile Include="DAO\MatKhau_DAO.cs" />
     <Compile Include="DAO\ThanhVien_DAO.cs" />
     <Compile Include="DTO\DocGia.cs" />
+    <Compile Include="BUS\DocGia_BUS.cs" />
+    <Compile Include="DAO\DocGia_DAO.cs" />
     <Compile Include="DTO\ThanhVien.cs" />
-    <Compile Include="GUI\ucIntroduce.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GUI\ucIntroduce.Designer.cs">
-      <DependentUpon>ucIntroduce.cs</DependentUpon>
-    </Compile>
     <Compile Include="GUI\fLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,9 +107,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="GUI\ucIntroduce.resx">
-      <DependentUpon>ucIntroduce.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="GUI\ucChangePassword.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ucChangePassword.Designer.cs">
+      <DependentUpon>ucChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ucLoanHistory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ucLoanHistory.Designer.cs">
+      <DependentUpon>ucLoanHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ucMember.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ucMember.Designer.cs">
+      <DependentUpon>ucMember.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="GUI\fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -132,6 +142,15 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="GUI\ucChangePassword.resx">
+      <DependentUpon>ucChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ucLoanHistory.resx">
+      <DependentUpon>ucLoanHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ucMember.resx">
+      <DependentUpon>ucMember.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

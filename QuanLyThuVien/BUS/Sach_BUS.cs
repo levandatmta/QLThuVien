@@ -20,13 +20,13 @@ namespace QuanLyThuVien.BUS
         {
             sachDao.Delete(mS);
         }
-        public bool Sua(Sach s)
-        {
-            if (string.IsNullOrEmpty(s.MaSach))
-                return false;
-            sachDao.Update(s);
-            return true;
-        }
+        // public bool Sua(Sach s)
+        // {
+        //     if (string.IsNullOrEmpty(s.MaSach))
+        //         return false;
+        //     sachDao.Update(s);
+        //     return true;
+        // }
         public int Them(Sach s)
         {
             if (string.IsNullOrEmpty(s.MaSach))

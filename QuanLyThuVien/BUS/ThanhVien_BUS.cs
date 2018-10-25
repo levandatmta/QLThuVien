@@ -10,12 +10,12 @@ namespace QuanLyThuVien.BUS
     class ThanhVien_BUS
     {
         ThanhVien_DAO tvDao = new ThanhVien_DAO();
-        // public bool DangNhap(string _tk, string _mk)
-        // {
-        //     if (tvDao.login(_tk, _mk) == true)
-        //         return true;
-        //     return false;
-        // }
+        public bool DangNhap(string _tk, string _mk)
+        {
+            if (tvDao.login(_tk, _mk) == true)
+                return true;
+            return false;
+        }
         public int DangKy(ThanhVien _tv)
         {
             if (string.IsNullOrEmpty(_tv.TenDangNhap) || string.IsNullOrEmpty(_tv.MatKhau))

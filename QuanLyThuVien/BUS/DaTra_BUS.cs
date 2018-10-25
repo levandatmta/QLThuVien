@@ -15,9 +15,6 @@ namespace QuanLyThuVien.BUS
         {
             return dtDao.loadSach();
         }
-        public DataTable TimKiem(string _timkiem, string _loaitk)
-        {
-            return dtDao.Search(_timkiem, _loaitk);
-        }
+  
     }
 }

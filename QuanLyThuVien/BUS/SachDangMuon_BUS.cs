@@ -15,9 +15,6 @@ namespace QuanLyThuVien.BUS
         {
             return sachdangmuonDao.loadSach(_tdn);
         }
-        public DataTable TimKiem(string _ts, string _tdn)
-        {
-            return sachdangmuonDao.Search(_ts, _tdn);
-        }
+
     }
 }

@@ -46,7 +46,15 @@ namespace QuanLyThuVien
             ResetGridview();
         }
 
-  
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            if (txtMaSach.Text != "")
+            {
+                sachBUS.Xoa(txtMaSach.Text);
+                ResetGridview();
+                ucFrmQLSach_Load(sender, e);
+            }
+        }
 
         private void btnSua_Click(object sender, EventArgs e)
         {

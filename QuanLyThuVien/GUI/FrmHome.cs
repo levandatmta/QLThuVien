@@ -29,7 +29,23 @@ namespace QuanLyThuVien
             DataProvider _dt = new DataProvider();
             DataTable dt = _dt.GetData("select * from ACCOUNT where ACCOUNT.TenDangNhap = '" + tdn + "'");
             string gt = dt.Rows[0]["Quyen"].ToString();
-        
+            if (gt == "1")
+            {
+                ribbonTrangChu.Visible = false;
+                ribbonThongKe.Visible = false;
+                barBtnQLSach.Enabled = false;
+                barBtnQLPM.Enabled = false;
+                barBtnQLPT.Enabled = false;
+                nBG_QL.Visible = false;
+                nBG_TK.Visible = false;
+            }
+            else
+            {
+                bar_SachDangMuon.Enabled = false;
+                bar_LichSu.Enabled = false;
+                nBG_LSMS.Visible = false;
+                rbpG_TK.Visible = false;
+            }
             //lb_ChayChu.Text = "Phần mềm được\n   thực hiện bởi\nPhạm Ngọc Hải\n        và     \nPhạm Minh Hoàng";
             //lb_ChayChu.Text = "Welcome";
             //lb_ChayChu.Top = 1;

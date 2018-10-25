@@ -10,15 +10,7 @@ namespace QuanLyThuVien.BUS
 {
     class PhieuTra_BUS
     {
-        PhieuTra_DAO ptDao = new PhieuTra_DAO();
-        public DataTable GetList()
-        {
-            return ptDao.loadPhieuTra();
-        }
-        public bool CheckExist(string _table, string _str)
-        {
-            return ptDao.CheckExist(_table, _str);
-
+       
         }
         public void Xoa(string _mp)
         {

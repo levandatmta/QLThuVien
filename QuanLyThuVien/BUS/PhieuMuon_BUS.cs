@@ -10,16 +10,7 @@ namespace QuanLyThuVien.BUS
 {
     class PhieuMuon_BUS
     {
-        PhieuMuon_DAO pmDao = new PhieuMuon_DAO();
-        public DataTable GetList()
-        {
-            return pmDao.loadPhieuMuon();
-        }
-        public bool CheckExist(string _table, string _str)
-        {
-            return pmDao.CheckExist(_table, _str);
-            
-        }
+        
         public void Xoa(string _mp)
         {
             pmDao.Delete(_mp);

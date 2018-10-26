@@ -11,7 +11,11 @@ namespace QuanLyThuVien.BUS
 {
     class Sach_BUS
     {
-       
+        Sach_DAO sachDao = new Sach_DAO();
+        public DataTable GetList()
+        {
+            return sachDao.loadSach();
+        }
         public void Xoa(string mS)
         {
             sachDao.Delete(mS);

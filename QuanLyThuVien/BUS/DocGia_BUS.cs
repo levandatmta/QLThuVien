@@ -11,7 +11,11 @@ namespace QuanLyThuVien.BUS
 {
     class DocGia_BUS
     {
-        
+        DocGia_DAO dgDao = new DocGia_DAO();
+        public DataTable GetList()
+        {
+            return dgDao.loadDocGia();
+        }
         public void Xoa(string mDG)
         {
             dgDao.Delete(mDG);

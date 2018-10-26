@@ -26,7 +26,7 @@ namespace QuanLyThuVien
             gridControl1.DataSource = lsmBus.GetList(tdn);
         }
 
-      /*  private void txtTimTenSach_EditValueChanged(object sender, EventArgs e)
+        private void txtTimTenSach_EditValueChanged(object sender, EventArgs e)
         {
             if (txtTimTenSach.Text == "")
             {
@@ -36,7 +36,6 @@ namespace QuanLyThuVien
             else
                 gridControl1.DataSource = lsmBus.TimKiem(txtTimTenSach.Text, tdn);
         }
-*/
 
         
 
